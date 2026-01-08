@@ -8,6 +8,7 @@ import GradientGenerator from "./pages/GradientGenerator";
 import {ToastContainer} from 'react-toastify'
 import AvatarGenerator from "./pages/AvatarGenerator";
 import ImageFinder from './pages/tools/ImageFinder'
+import YoutubeThumbnailDownloader from "./pages/tools/YoutubeThumbnailDownloader";
 const App = () => {
   return (
     <BrowserRouter>
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/gradient-generator" element={<GradientGenerator />} />
         <Route path="/avatar-generator" element={<AvatarGenerator />} />
         <Route path="/image-finder" element={<ImageFinder />} />
+        <Route path="/youtube-thumbnail-downloader" element={<YoutubeThumbnailDownloader />} />
       </Routes>
     </BrowserRouter>
   );

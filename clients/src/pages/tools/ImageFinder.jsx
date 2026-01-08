@@ -4,10 +4,13 @@ import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { HashLoader } from "react-spinners";
 import { MdOutlineFileDownload } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
+import { IoArrowBack } from "react-icons/io5"
 
 const API_KEY = import.meta.env.VITE_PEXELS_API_KEY;
 
 const ImageFinder = () => {
+  const navigate = useNavigate();
   const [photos, setPhotos] = useState([]);
   const [loading, setLoading] = useState(false);
   const [loadingId, setLoadingId] = useState(null);
@@ -72,7 +75,12 @@ const ImageFinder = () => {
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center py-8 gap-5 animate__animated animate__fadeIn">
       <h1 className="text-3xl font-bold text-indigo-600">📸Image Gallery</h1>
-
+      <div
+        className="absolute top-6 left-5 cursor-pointer"
+        onClick={() => navigate("/")}
+      >
+        <IoArrowBack className="w-6 h-6" />
+      </div>
       <form action="" onSubmit={search} className="">
         <input
           type="text"
@@ -90,9 +98,6 @@ const ImageFinder = () => {
             <h1 className="text-2xl md:text-3xl font-semibold text-gray-300">
               😕 No Results Found
             </h1>
-            <p className="text-gray-500 mt-2">
-              Try searching with a different keyword
-            </p>
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
