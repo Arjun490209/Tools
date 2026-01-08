@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import { RiPaletteLine, RiUserSmileLine } from "react-icons/ri";
+import { RiPaletteLine, RiUserSmileLine, RiImageLine  } from "react-icons/ri";
+
+
 
 
 const tools = [
@@ -18,6 +20,14 @@ const tools = [
     url: "/avatar-generator",
     description: "Generate unlimited avatars for your website or apps.",
     icon: RiUserSmileLine,
+    status: "active",
+  },
+  {
+    toolName: "Image Finder",
+    slug: "image-finder",
+    url: "/image-finder",
+    description: "Image Finder helps you quickly find relevant, high-quality images.",
+    icon: RiImageLine ,
     status: "active",
   },
 ];
