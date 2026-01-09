@@ -1,9 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import { RiPaletteLine, RiUserSmileLine, RiImageLine,RiYoutubeLine  } from "react-icons/ri";
-
-
-
+import {
+  RiPaletteLine,
+  RiUserSmileLine,
+  RiImageLine,
+  RiYoutubeLine,
+  RiTodoLine,
+} from "react-icons/ri";
 
 const tools = [
   {
@@ -26,20 +29,30 @@ const tools = [
     toolName: "Image Finder",
     slug: "image-finder",
     url: "/image-finder",
-    description: "Image Finder helps you quickly find relevant, high-quality images.",
-    icon: RiImageLine ,
+    description:
+      "Image Finder helps you quickly find relevant, high-quality images.",
+    icon: RiImageLine,
     status: "active",
   },
   {
     toolName: "Yt Thumbnail Downloader",
     slug: "youtube-thumbnail-downloader",
     url: "/youtube-thumbnail-downloader",
-    description: "Easily fetch and download YouTube video thumbnails in HD, SD, and original quality.",
-    icon: RiYoutubeLine ,
+    description:
+      "Easily fetch and download YouTube video thumbnails in HD, SD, and original quality.",
+    icon: RiYoutubeLine,
+    status: "active",
+  },
+  {
+    toolName: "Task Planner App",
+    slug: "task-planner",
+    url: "/task-planner",
+    description:
+      "Plan, organize, and manage your daily tasks efficiently with reminders and progress tracking.",
+    icon: RiTodoLine,
     status: "active",
   },
 ];
-
 
 const Home = () => {
   const navigate = useNavigate();
@@ -93,6 +106,5 @@ const Home = () => {
     </div>
   );
 };
-
 
 export default Home;

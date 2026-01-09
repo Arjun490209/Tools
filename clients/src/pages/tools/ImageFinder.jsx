@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import { HashLoader } from "react-spinners";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-import { IoArrowBack } from "react-icons/io5"
+import { IoArrowBack } from "react-icons/io5";
 
 const API_KEY = import.meta.env.VITE_PEXELS_API_KEY;
 
@@ -104,8 +104,10 @@ const ImageFinder = () => {
             {photos.map((item, index) => (
               <div key={index} className="bg-white rounded-xl overflow-hidden">
                 <img
-                  src={item.src.original}
+                  src={item.src.medium}
                   alt={item.alt}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-50 object-cover hover:scale-110 transition-all duration-300"
                 />
 

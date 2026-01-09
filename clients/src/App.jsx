@@ -9,6 +9,7 @@ import {ToastContainer} from 'react-toastify'
 import AvatarGenerator from "./pages/AvatarGenerator";
 import ImageFinder from './pages/tools/ImageFinder'
 import YoutubeThumbnailDownloader from "./pages/tools/YoutubeThumbnailDownloader";
+import TaskPlanner from "./pages/tools/TaskPlanner";
 const App = () => {
   return (
     <BrowserRouter>
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/avatar-generator" element={<AvatarGenerator />} />
         <Route path="/image-finder" element={<ImageFinder />} />
         <Route path="/youtube-thumbnail-downloader" element={<YoutubeThumbnailDownloader />} />
+        <Route path="/task-planner" element={<TaskPlanner />} />
       </Routes>
     </BrowserRouter>
   );

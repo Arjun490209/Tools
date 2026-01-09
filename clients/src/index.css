@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+*{
+    scrollbar-face-color: transparent;
+}
+html{
+    scroll-behavior: smooth;
+
+}
