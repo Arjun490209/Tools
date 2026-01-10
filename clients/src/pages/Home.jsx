@@ -7,6 +7,7 @@ import {
   RiYoutubeLine,
   RiTodoLine,
   RiChatSmile2Line,
+  RiQrCodeLine,
 } from "react-icons/ri";
 
 const tools = [
@@ -61,7 +62,17 @@ const tools = [
     "An AI-powered chatbot that helps users with instant answers, smart conversations, and automated support in real time.",
   icon: RiChatSmile2Line,
   status: "active",
-}
+},
+  {
+  toolName: "QR Code Generator",
+  slug: "qr-code",
+  url: "/qr-code",
+  description:
+    "Generate QR codes instantly for URLs, text, phone numbers, emails, and more with a clean and easy-to-use interface.",
+  icon: RiQrCodeLine,
+  status: "active",
+},
+
 
 ];
 

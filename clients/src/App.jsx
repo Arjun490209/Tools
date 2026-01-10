@@ -11,6 +11,7 @@ import ImageFinder from './pages/tools/ImageFinder'
 import YoutubeThumbnailDownloader from "./pages/tools/YoutubeThumbnailDownloader";
 import TaskPlanner from "./pages/tools/TaskPlanner";
 import Chatbot from "./pages/tools/Chatbot";
+import QrCodeGenerator from "./pages/tools/QrCodeGenerator";
 const App = () => {
   return (
     <BrowserRouter>
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/youtube-thumbnail-downloader" element={<YoutubeThumbnailDownloader />} />
         <Route path="/task-planner" element={<TaskPlanner />} />
         <Route path="/chatbot" element={<Chatbot />} />
+        <Route path="/qr-code" element={<QrCodeGenerator />} />
       </Routes>
     </BrowserRouter>
   );
