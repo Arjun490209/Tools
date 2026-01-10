@@ -10,6 +10,7 @@ import AvatarGenerator from "./pages/AvatarGenerator";
 import ImageFinder from './pages/tools/ImageFinder'
 import YoutubeThumbnailDownloader from "./pages/tools/YoutubeThumbnailDownloader";
 import TaskPlanner from "./pages/tools/TaskPlanner";
+import Chatbot from "./pages/tools/Chatbot";
 const App = () => {
   return (
     <BrowserRouter>
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/image-finder" element={<ImageFinder />} />
         <Route path="/youtube-thumbnail-downloader" element={<YoutubeThumbnailDownloader />} />
         <Route path="/task-planner" element={<TaskPlanner />} />
+        <Route path="/chatbot" element={<Chatbot />} />
       </Routes>
     </BrowserRouter>
   );

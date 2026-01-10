@@ -6,6 +6,7 @@ import {
   RiImageLine,
   RiYoutubeLine,
   RiTodoLine,
+  RiChatSmile2Line,
 } from "react-icons/ri";
 
 const tools = [
@@ -52,6 +53,16 @@ const tools = [
     icon: RiTodoLine,
     status: "active",
   },
+  {
+  toolName: "Chatbot App",
+  slug: "chatbot",
+  url: "/chatbot",
+  description:
+    "An AI-powered chatbot that helps users with instant answers, smart conversations, and automated support in real time.",
+  icon: RiChatSmile2Line,
+  status: "active",
+}
+
 ];
 
 const Home = () => {

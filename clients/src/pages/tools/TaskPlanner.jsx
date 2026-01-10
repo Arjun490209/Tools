@@ -47,13 +47,13 @@ const TaskPlanner = () => {
     };
   }, []);
 
-  // bg-[radial-gradient(circle_at_circle,_#00c6ff_0%,_#0072ff_50%,_hsl(268.9,_81.04%,_48.30%)_100%)]
+
 
   return (
     <div className="min-h-screen bg-gray-200 overflow-hidden flex justify-center">
       <nav className="text-white bg-gradient-to-r from-rose-600 via-slate-800 to-slate-900 h-15 fixed top-0 left-0 w-full flex justify-between items-center px-1 sm:px-4 lg:px-8">
         <div className="flex items-center gap-0.5 md:gap-2">
-          <button className="w-10 h-10 bg-blue-500 text-white font-bold rounded-full ">
+          <button className="w-10 h-10 bg-[radial-gradient(circle_at_center,_#00c6ff_0%,_#0072ff_50%,_hsl(269_81%_48%)_100%)] text-white font-bold rounded-full ">
             TP
           </button>
           <h1 className="text-2xl font-bold flex gap-1.5">
