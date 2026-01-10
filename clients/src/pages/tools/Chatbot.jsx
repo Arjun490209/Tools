@@ -73,6 +73,13 @@ const Chatbot = () => {
     }
   };
 
+  const formatMessage = (text) => {
+  return text
+    .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+    .replace(/\n/g, "<br/>");
+};
+
+
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [chat]);
@@ -120,7 +127,12 @@ const Chatbot = () => {
               {item.sender === "ai" && (
                 <div className="flex flex-col gap-2 items-end animate__animated animate__fadeIn">
                   <div className="bg-green-200 text-green-500 font-medium px-6 space-y-1.5 py-2 rounded-sm w-9/12">
-                    {item.message}
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: formatMessage(item.message),
+                      }}
+                    />
+
                     <div className="flex justify-end text-gray-500 text-xs ">
                       <label htmlFor="">
                         {moment(item.createAt).format(
