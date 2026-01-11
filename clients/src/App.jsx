@@ -13,6 +13,7 @@ import TaskPlanner from "./pages/tools/TaskPlanner";
 import Chatbot from "./pages/tools/Chatbot";
 import QrCodeGenerator from "./pages/tools/QrCodeGenerator";
 import JsonGenerator from "./pages/tools/JsonGenerator";
+import ExpenseTracker from "./pages/tools/ExpenseTracker";
 const App = () => {
   return (
     <BrowserRouter>
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/qr-code" element={<QrCodeGenerator />} />
         <Route path="/json-generator" element={<JsonGenerator />} />
+        <Route path="/expense" element={<ExpenseTracker />} />
       </Routes>
     </BrowserRouter>
   );
