@@ -8,6 +8,7 @@ import {
   RiTodoLine,
   RiChatSmile2Line,
   RiQrCodeLine,
+  RiBracesLine,
 } from "react-icons/ri";
 
 const tools = [
@@ -72,6 +73,16 @@ const tools = [
   icon: RiQrCodeLine,
   status: "active",
 },
+ {
+  toolName: "Dummy JSON Generator",
+  slug: "json-generator",
+  url: "/json-generator",
+  description:
+    "Generate dummy JSON data instantly for testing APIs, frontend development, and mock projects with ease.",
+  icon: RiBracesLine,
+  status: "active",
+},
+
 
 
 ];

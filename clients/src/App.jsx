@@ -12,6 +12,7 @@ import YoutubeThumbnailDownloader from "./pages/tools/YoutubeThumbnailDownloader
 import TaskPlanner from "./pages/tools/TaskPlanner";
 import Chatbot from "./pages/tools/Chatbot";
 import QrCodeGenerator from "./pages/tools/QrCodeGenerator";
+import JsonGenerator from "./pages/tools/JsonGenerator";
 const App = () => {
   return (
     <BrowserRouter>
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/task-planner" element={<TaskPlanner />} />
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/qr-code" element={<QrCodeGenerator />} />
+        <Route path="/json-generator" element={<JsonGenerator />} />
       </Routes>
     </BrowserRouter>
   );
