@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Tools from './pages/Tools'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import GradientGenerator from "./pages/GradientGenerator";
@@ -14,13 +13,14 @@ import Chatbot from "./pages/tools/Chatbot";
 import QrCodeGenerator from "./pages/tools/QrCodeGenerator";
 import JsonGenerator from "./pages/tools/JsonGenerator";
 import ExpenseTracker from "./pages/tools/ExpenseTracker";
+import Projects from "./components/Projects";
 const App = () => {
   return (
     <BrowserRouter>
     <ToastContainer />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/tools" element={<Tools />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gradient-generator" element={<GradientGenerator />} />
